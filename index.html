@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <title>Alexandre Oliveira</title>
+</head>
+
+<body>
+    <div class="caixa-principal" id="home">
+        <nav>
+            <h2 class="portfolio">Port<span>fólio</span></h2>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#projetos-id" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#fale-comigo" class="nav-link">Fale comigo</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="./assets/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="#home" class="nav-link">Início</a></li>
+                <li class="nav-link"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-link"><a href="#projetos-id" class="nav-link">Projetos</a></li>
+                <li class="nav-link"><a href="#fale-comigo" class="nav-link">Fale comigo</a></li>
+            </ul>
+        </div>
+
+        <div class="perfil">
+            <div class="meu-nome">
+                <h1>Alexandre <span>Oliveira</span></h1>
+                <h3>Programador Front End</h3>
+            </div>
+            <img src="./assets/teste1.png" alt="">
+        </div>
+    </div>
+
+    <section id="sobre">
+        <img src="./assets/Alexandre.png" alt="foto de perfil">
+        <div>
+            <h2>Sobre min</h2>
+            <p>Olá, me chamo Alexandre, sou um apaixonado pela área de tecnologia.
+
+                Desde criança, sempre fui muito curioso pela área. Sempre quis saber como as coisas funcionavam e tendo
+                isso em vista
+                decidi me torna um programador.</p>
+            <a href="#fale-comigo" class="button">Fale Comigo</a>
+        </div>
+    </section>
+
+    <div class="projetos" id="projetos-id">
+        <h2>Principais Projetos</h2>
+
+        <div class="card-projetos">
+            <div class="card">
+                <img src="./assets/conversor-de-moedas.png" alt="">
+                <h5>Conversor de Moedas</h5>
+                <p>Projeto foi desenvolvido com valor da moeda do dia, com uso de uma <a href="https://docs.awesomeapi.com.br/api-de-moedas"
+                        class="api" target="_blank">API</a>.</p>
+                <a href="https://alexandre990.github.io/Projeto-Conversor-de-Moedas/" class="button" target="_blank">Ver
+                    projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./assets/modele.png" alt="">
+                <h5>Modele</h5>
+                <p>Site desenvolvido para um aplicativo de costura. Onde o usuário pode acessar para assim está
+                    conhecendo
+                    mais sobre o
+                    aplicativo.</p>
+                <a href="https://alexandre990.github.io/Modele/" class="button" target="_blank">Ver projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./assets/relogio-digital.png" alt="">
+                <h5>Relógio Digital</h5>
+                <p>O projeto desenvolvido monstra a hora em tempo real. Embora seja simples é utilizado várias
+                    tecnologias.
+                </p>
+                <a href="https://alexandre990.github.io/Relogio-Digital/" class="button" target="_blank">Ver projeto</a>
+            </div>
+        </div>
+
+        <div id="dots"></div>
+
+        <!-- Experimento daqui para baixo -->
+
+        <div class="card-projetos-2" id="more">
+            <div class="card">
+                <img src="./assets/god.png" alt="">
+                <h5>God of War Ragnarök</h5>
+                <p>Projeto simula a página de lançamento do jogo God of War Ragnarök. Com várias
+                    animações, deixando mais fluida e agradável a visita.</p>
+                <a href="https://alexandre990.github.io/god-of-war/" class="button" target="_blank">Ver
+                    projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./assets/portfólio.png" alt="">
+                <h5>Mini-portfólio</h5>
+                <p>O projeto é um mini-portfólio onde foi proposto ser direto. Primeiro uma pequena apresentação
+                    e depois como está entrando em contato para uma futura contratação.</p>
+                <a href="https://alexandre990.github.io/Mini-Portifolio/" class="button" target="_blank">Ver projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./assets/Starbucks.png" alt="">
+                <h5>Starbucks</h5>
+                <p>É uma simulação da home page do Starbucks. Nela pode-se fazer a troca do copo junto de suas cores
+                    através dos ícones
+                    posicionados abaixo.</p>
+                <a href="https://alexandre990.github.io/Starbucks/" class="button" target="_blank">Ver
+                    projeto</a>
+            </div>
+        </div>
+
+        <!-- Experimento daqui para cima -->
+        <button class="load" onclick="myFunction()" id="myBtn">Veja mais</button>
+    </div>
+
+    <footer id="fale-comigo">
+        <h5>Alexandre Oliveira</h5>
+        <p>Mais informações sobre min</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alexandre-souza-de-oliveira-56b2b2226/" target="_blank"><img
+                    src="./assets/linkedin.png" alt="linkedin"></a>
+
+            <a href=" https://wa.me/+5592993240641" target="_blank"><img src="./assets/whatsapp.png" alt="whatsapp"></a>
+
+            <a href="https://github.com/Alexandre990" target="_blank"><img src="./assets/github.png" alt="github"
+                    class="github"></a>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
